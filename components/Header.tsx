@@ -1,15 +1,10 @@
-"use client";
-import React, { useEffect } from "react";
+import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
 
 type Props = {};
 
 export default function Header({}: Props) {
-  /* TODO: fix use-client/useEffect issue with motion */
-  useEffect(() => {
-    return;
-  }, []);
   return (
     <header className="sticky top-0 p-5 flex flex-items-start- justify-between max-w-7xl mx-auto z-20 xl:items-center">
       <motion.div

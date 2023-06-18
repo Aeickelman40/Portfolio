@@ -12,6 +12,8 @@ export default function Hero({}: Props) {
       "<ConstantLearner />",
       "Soup Dumpling Enthusiast",
       "Growth-oriented.tsx",
+      "If you're still reading this...",
+      "Please, select something below!",
     ],
     loop: true,
     delaySpeed: 2000,

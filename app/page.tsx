@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import WorkExperience from "@/components/WorkExperience";
 import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
 
 export default function Home({}: NextPage) {
   return (
@@ -22,8 +23,12 @@ export default function Home({}: NextPage) {
         <WorkExperience />
       </section>
 
-      <section id="skill" className="snap-start">
+      <section id="skills" className="snap-start">
         <Skills />
+      </section>
+
+      <section id="projects" className="snap-start">
+        <Projects />
       </section>
     </main>
   );

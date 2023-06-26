@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import WorkExperience from "@/components/WorkExperience";
 
 export default function Home({}: NextPage) {
   return (
@@ -14,6 +15,10 @@ export default function Home({}: NextPage) {
 
       <section id="about" className="snap-center">
         <About />
+      </section>
+
+      <section id="experience" className="snap-center">
+        <WorkExperience />
       </section>
     </main>
   );

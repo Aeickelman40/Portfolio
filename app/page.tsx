@@ -8,8 +8,6 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import ContactMe from "@/components/ContactMe";
 
-// TODO: Remove horizontal scroll, make cards draggable, update images, update text
-
 export default function Home({}: NextPage) {
   return (
     <main className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">

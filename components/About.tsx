@@ -4,6 +4,12 @@ import React from "react";
 type Props = {};
 
 function About({}: Props) {
+  // create ref variable using useRef hook
+
+  // const scroll = (scrollOffset) => {
+  //   ref.current.scrollLeft += scrollOffset;
+  // };
+
   return (
     <motion.div
       initial={{
@@ -32,15 +38,28 @@ function About({}: Props) {
       />
       <div className="space-y-10 px-0 md:px-10">
         <h4 className="text-4xl font-semibold">
-          Here is a{" "}
-          <span className="underline decoration-[#F7AB0A]/50">little</span>{" "}
-          background
+          Here is a little{" "}
+          <span className="underline decoration-[#F7AB0A]/50">background</span>{" "}
         </h4>
         <p className="text-base">
-          I am a software engineer with hands-on experience in developing
-          applications from a Front End perspective with an emphasis on Test
-          Driven Development, User Experience, and developer empathy.
+          I am a passionate web developer who loves crafting innovative and
+          user-friendly websites. With a strong foundation in using React, React
+          Native, Typescript, Node. and GraphQL, I thrive on transforming ideas
+          into visually appealing and functional online experiences. Whether
+          it&apos;s building responsive designs or implementing complex
+          functionalities, I enjoy the challenges that come with creating
+          seamless digital solutions.
+          <br />
+          <br />
+          When I&apos;m not immersed in the world of coding, you&apos;ll often
+          find me outside either on my bike or exploring new areas to snowboard.
+          In both my professional and personal pursuits, I am driven by the
+          desire to learn, grow, and create. I strive to bring a combination of
+          creativity, technical expertise, and a passion for pushing boundaries
+          to everything I do.
         </p>
+        {/* <button onClick={() => scroll(-20)}>LEFT</button>
+        <button onClick={() => scroll(20)}>RIGHT</button> */}
       </div>
     </motion.div>
   );

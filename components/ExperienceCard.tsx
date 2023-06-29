@@ -6,7 +6,7 @@ type Props = {};
 
 const ExperienceCard = (props: Props) => {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transistion-opacity duration-200 overflow-hidden">
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-[#4d4b4b] p-10 hover:opacity-100 opacity-40 cursor-pointer transistion-opacity duration-200 overflow-hidden">
       <motion.img
         initial={{
           y: -100,
@@ -23,7 +23,7 @@ const ExperienceCard = (props: Props) => {
           once: true,
         }}
         className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-start"
-        src="https://picsum.photos/id/237/200/300"
+        src="https://media.licdn.com/dms/image/C560BAQFPuFCSF06gRQ/company-logo_200_200/0/1553198011945?e=1695859200&v=beta&t=RDJgRkm10kILAskdAsKrpzYQ2hV5BbV9uz2oPprJa18"
         alt=""
       />
       <div className="px-0 md:px-10">

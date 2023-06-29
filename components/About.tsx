@@ -1,15 +1,10 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import React from "react";
 
 type Props = {};
 
 function About({}: Props) {
-  // create ref variable using useRef hook
-
-  // const scroll = (scrollOffset) => {
-  //   ref.current.scrollLeft += scrollOffset;
-  // };
-
   return (
     <motion.div
       initial={{
@@ -19,11 +14,11 @@ function About({}: Props) {
       transition={{ duration: 1.5 }}
       className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-8 uppercase tracking-[20px] text-gray-500 text-2xl">
         About
       </h3>
 
-      <motion.img
+      {/* <motion.img
         initial={{
           x: -200,
           opacity: 0,
@@ -34,7 +29,14 @@ function About({}: Props) {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         src="https://picsum.photos/id/237/200/300"
-        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]"
+        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[450px]"
+      /> */}
+      <Image
+        height={400}
+        width={400}
+        alt="about page image"
+        src="/../public/about-photo.png"
+        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[450px]"
       />
       <div className="space-y-10 px-0 md:px-10">
         <h4 className="text-4xl font-semibold">
@@ -58,8 +60,6 @@ function About({}: Props) {
           creativity, technical expertise, and a passion for pushing boundaries
           to everything I do.
         </p>
-        {/* <button onClick={() => scroll(-20)}>LEFT</button>
-        <button onClick={() => scroll(20)}>RIGHT</button> */}
       </div>
     </motion.div>
   );

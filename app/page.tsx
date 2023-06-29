@@ -36,7 +36,7 @@ export default function Home({}: NextPage) {
       <section id="contact" className="snap-start">
         <ContactMe />
       </section>
-      <Link href="#hero">
+      {/* <Link href="#hero">
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
             <img
@@ -46,7 +46,7 @@ export default function Home({}: NextPage) {
             />
           </div>
         </footer>
-      </Link>
+      </Link> */}
     </main>
   );
 }

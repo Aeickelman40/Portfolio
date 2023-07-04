@@ -10,6 +10,7 @@ function WorkExperience({}: Props) {
   // const scroll = (scrollOffset) => {
   //   ref.current.scrollLeft += scrollOffset;
   // };
+
   return (
     <motion.div
       initial={{

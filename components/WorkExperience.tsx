@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import ExperienceCard from "./ExperienceCard";
 import { intevitySummary, kordspaceSummary } from "@/shared/workSummary";
@@ -36,9 +36,24 @@ function WorkExperience({}: Props) {
         Experience
       </h3>
       <div className="flex flex-col space-y-4 mr-4">
-        <button onClick={handleIntevityClick}>Intevity</button>
-        <button onClick={handleKordspaceClick}>Kordspace</button>
-        <button onClick={handleTuringClick}>Turing</button>
+        <button
+          className="px-6 py-2 border border-white rounded-full uppercase text-xs tracking-widest text-white transition-all hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40"
+          onClick={handleIntevityClick}
+        >
+          Intevity
+        </button>
+        <button
+          className="px-6 py-2 border border-white rounded-full uppercase text-xs tracking-widest text-white transition-all hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40"
+          onClick={handleKordspaceClick}
+        >
+          Kordspace
+        </button>
+        <button
+          className="px-6 py-2 border border-white rounded-full uppercase text-xs tracking-widest text-white transition-all hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40"
+          onClick={handleTuringClick}
+        >
+          Turing
+        </button>
       </div>
       <div className="w-full flex space-x-5 overflow-x-scroll overflow-y-auto p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
         <div ref={intevityRef}>

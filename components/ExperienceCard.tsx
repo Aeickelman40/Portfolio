@@ -39,9 +39,9 @@ const ExperienceCard = ({
         alt=""
       />
       <div className="px-0 md:px-10">
-        <h4 className="text-2xl font-light">{title}</h4>
-        <p className="font-bold text-xl mt-1">{company}</p>
-        <p className="uppercase py-5 text-gray-300">{dateRange}</p>
+        <h4 className="text-2xl font-light text-center">{title}</h4>
+        <p className="font-bold text-xl mt-1 text-center">{company}</p>
+        <p className="uppercase py-5 text-gray-300 text-center">{dateRange}</p>
         <ul className="list-disc space-y-4 ml-5 text-md">
           {summaryArrary.map((summaryPoint: string) => {
             return <li key={summaryPoint}>{summaryPoint}</li>;

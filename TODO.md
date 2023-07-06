@@ -8,4 +8,5 @@ TODO:
 - set linebreak rules for css
 - obtain .dev domain
 - mobile styling
-- hydration issue
+- hydration issue (use client on motion files?)
+- update routing

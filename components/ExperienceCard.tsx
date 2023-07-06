@@ -18,7 +18,7 @@ const ExperienceCard = ({
   summaryArrary,
 }: Props) => {
   return (
-    <article className="flex flex-col rounded-lg items-center flex-shrink-0 w-[500px] md:w-[600px] xl:w-[1100px] snap-center bg-[#4d4b4b] p-5  opacity-100 cursor-pointer transistion-opacity duration-200 overflow-hidden mt-8 hover:border-[#F7AB0A]/40 hover:border">
+    <article className="flex flex-col rounded-lg items-center flex-shrink-0 w-[500px] md:w-[600px] xl:w-[1100px] snap-center bg-[#4d4b4b] p-5 opacity-100 cursor-pointer transistion-opacity duration-200 overflow-hidden mt-8 hover:border-[#F7AB0A]/40 hover:border">
       <motion.img
         initial={{
           y: -100,

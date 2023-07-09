@@ -23,7 +23,7 @@ export default function Hero({}: Props) {
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <BackgroundCircles />
       <Image
-        src="/../public/profile-photo.png"
+        src="/profile-photo.png"
         width={500}
         height={500}
         alt="Picture of myself"

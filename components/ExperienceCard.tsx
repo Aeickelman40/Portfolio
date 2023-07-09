@@ -42,7 +42,7 @@ const ExperienceCard = ({
         <h4 className="text-2xl font-light text-center">{title}</h4>
         <p className="font-bold text-xl mt-1 text-center">{company}</p>
         <p className="uppercase py-5 text-gray-300 text-center">{dateRange}</p>
-        <ul className="list-disc space-y-4 ml-5 text-md">
+        <ul className="list-disc space-y-4 ml-5 text-md text-left">
           {summaryArrary.map((summaryPoint: string) => {
             return <li key={summaryPoint}>{summaryPoint}</li>;
           })}

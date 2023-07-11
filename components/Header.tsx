@@ -35,7 +35,7 @@ export default function Header({}: Props) {
           bgColor="transparent"
         />
       </motion.div>
-      <Link href="#contact">
+      <Link className="flex" href="#contact">
         <motion.div
           initial={{
             x: 500,
@@ -50,11 +50,9 @@ export default function Header({}: Props) {
           transition={{
             duration: 1.5,
           }}
-          className="flex flex-row items-center text-gray-300"
+          className="flex items-center"
         >
-          <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
-            Get In Touch
-          </p>
+          <p className="uppercase text-md text-gray-400">Get In Touch</p>
         </motion.div>
       </Link>
     </header>

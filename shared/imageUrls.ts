@@ -11,12 +11,12 @@ export const jsUrl =
   "https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg";
 
 export const reactUrl =
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/React_Native_Logo.png/640px-React_Native_Logo.png";
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png?20220125121207";
 
 export const reduxUrl = "https://cdn.worldvectorlogo.com/logos/redux.svg";
 
-export const reactNativeUrl =
-  "https://www.nicepng.com/png/detail/259-2592669_ios-android-icon-png-clip-art-free-ios.png";
+export const firebaseUrl =
+  "https://cdn.dribbble.com/users/528264/screenshots/3140440/media/5f34fd1aa2ebfaf2cd548bafeb021c8f.png?compress=1&resize=800x600&vertical=center";
 
 export const typescriptUrl =
   "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/2048px-Typescript_logo_2020.svg.png";

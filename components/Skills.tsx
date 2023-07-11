@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import Skill from "./Skill";
 import {
+  firebaseUrl,
   githubUrl,
   graphQLUrl,
   jestUrl,
@@ -35,17 +36,17 @@ function Skills({}: Props) {
       </h3>
       <div className="grid grid-cols-5 gap-5">
         <Skill directionLeft={true} logoUrl={jsUrl} name="Javascript" />
-        <Skill directionLeft={true} logoUrl={reactUrl} name="React" />
-        <Skill directionLeft={true} logoUrl={reduxUrl} name="Redux" />
         <Skill
           directionLeft={true}
-          logoUrl={reactNativeUrl}
-          name="React-Native"
+          logoUrl={reactUrl}
+          name="React Native + React"
         />
+        <Skill directionLeft={true} logoUrl={reduxUrl} name="Redux" />
         <Skill directionLeft={true} logoUrl={typescriptUrl} name="Typescript" />
-        <Skill logoUrl={nextUrl} name="Next.js" />
+        <Skill directionLeft={true} logoUrl={nextUrl} name="Next.js" />
         <Skill logoUrl={nodeUrl} name="Node.js" />
         <Skill logoUrl={graphQLUrl} name="GraphQL" />
+        <Skill logoUrl={firebaseUrl} name="Firebase" />
         <Skill logoUrl={jestUrl} name="Test Driven Developement" />
         <Skill logoUrl={githubUrl} name="Git Version Control" />
       </div>

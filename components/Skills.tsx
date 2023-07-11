@@ -9,7 +9,6 @@ import {
   jsUrl,
   nextUrl,
   nodeUrl,
-  reactNativeUrl,
   reactUrl,
   reduxUrl,
   typescriptUrl,

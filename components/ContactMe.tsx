@@ -28,7 +28,7 @@ function ContactMe({}: Props) {
       <h3 className="absolute top-[80px] md:top-8 uppercase tracking-[20px] text-gray-500 text-xl lg:text-2xl">
         Contact
       </h3>
-      <div className="flex flex-col space-y-10 mt-20">
+      <div className="flex flex-col space-y-10 mt-20 w-10/12">
         <h4 className="text-4xl font-semibold text-center">
           Interested in starting a conversation?{" "}
           <span className="underline decoration-[#F7AB0A]/50">
@@ -51,9 +51,9 @@ function ContactMe({}: Props) {
         </div>
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-2 w-fit mx-auto"
+          className="flex flex-col space-y-2 w-full md:w-fit mx-auto "
         >
-          <div className="flex space-x-2">
+          <div className="hidden md:flex md:space-x-2">
             <input
               {...register("name")}
               placeholder="Name"
@@ -67,6 +67,18 @@ function ContactMe({}: Props) {
               type="email"
             />
           </div>
+          <input
+            {...register("name")}
+            placeholder="Name"
+            className="contactInput md:hidden"
+            type="text"
+          />
+          <input
+            {...register("email")}
+            placeholder="Email"
+            className="contactInput md:hidden"
+            type="email"
+          />
           <input
             {...register("subject")}
             placeholder="Subject"

@@ -14,7 +14,7 @@ function About({}: Props) {
       transition={{ duration: 1.5 }}
       className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-8 uppercase tracking-[20px] text-gray-500 text-md lg:text-2xl">
+      <h3 className="absolute top-[70px] md:top-8 uppercase tracking-[20px] text-gray-500 text-xl lg:text-2xl">
         About
       </h3>
 
@@ -29,14 +29,14 @@ function About({}: Props) {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         src="/about-photo.png"
-        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[450px]"
+        className="-mb-24 md:mb-0 flex-shrink-0 w-40 h-40 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[400px] xl:h-[450px]"
       />
-      <div className="space-y-10 px-0 md:px-10">
-        <h4 className="text-4xl font-semibold">
+      <div className="space-y-10 -mb-10 px-0 md:px-10">
+        <h4 className="text-xl md:text-4xl font-semibold">
           Here is a little{" "}
           <span className="underline decoration-[#F7AB0A]/50">background</span>{" "}
         </h4>
-        <p className="text-base">
+        <p className="text-sm md:text-base">
           I am a passionate web developer who loves crafting innovative and
           user-friendly websites. With a strong foundation in using React, React
           Native, Typescript, Node. and GraphQL, I thrive on transforming ideas

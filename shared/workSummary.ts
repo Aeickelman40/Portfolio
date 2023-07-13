@@ -3,7 +3,6 @@ export const intevitySummary = [
   "Member of a Storefront Development team tasked with implementing Front End features and fixes using Next.js and deployment of updates using Vercel to the production environment.",
   "Leverage BigCommerce API using GraphQL for product management. Implemented styling and functionality updates while also providing QA support and code reviews to other team members.",
   "Lead developer for the rebuild of a mobile application centered on product management using React Native.",
-  "Bi-weekly presentation to the clients showcasing development updates Created an internal testing environment for QA in both iOS and Google Play stores.",
   "Deployed new application to iOS and Google Play stores with error monitoring in place using Sentry.",
 ];
 

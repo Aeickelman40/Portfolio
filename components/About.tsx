@@ -14,7 +14,7 @@ function About({}: Props) {
       transition={{ duration: 1.5 }}
       className="flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-[70px] md:top-8 uppercase tracking-[20px] text-gray-500 text-xl lg:text-2xl">
+      <h3 className="absolute top-[80px] md:top-8 uppercase tracking-[20px] text-gray-500 text-xl lg:text-2xl">
         About
       </h3>
 
@@ -39,7 +39,7 @@ function About({}: Props) {
         <p className="text-sm md:text-base">
           I am a passionate web developer who loves crafting innovative and
           user-friendly websites. With a strong foundation in using React, React
-          Native, Typescript, Node and GraphQL. I thrive on transforming ideas
+          Native, Typescript, Node. and GraphQL, I thrive on transforming ideas
           into visually appealing and functional online experiences. Whether
           it&apos;s building responsive designs or implementing complex
           functionalities, I enjoy the challenges that come with creating

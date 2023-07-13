@@ -2,7 +2,6 @@ TODO:
 
 - update text
 - update color scheme/set universal hex values
-- set linebreak rules for css
 - obtain .dev domain
 - mobile styling
 - update routing
@@ -10,3 +9,4 @@ TODO:
 - change projects page for coming soon, prompt to reach out for building something together
 - Add resume link (about page?)
 - Host pdf resume file for url to make a clickable link
+- Move all images to public folder, no urls

@@ -27,13 +27,10 @@ function Skills({}: Props) {
       className="flex relative flex-col text-center md:text-left xl:flex-row
     max-2-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center"
     >
-      <h3 className="absolute top-8 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-[80px] md:top-8 uppercase tracking-[20px] text-gray-500 text-xl lg:text-2xl">
         Skills
       </h3>
-      <h3 className="absolute top-16 uppercase tracking-[3px] text-gray-500 text-sm">
-        Hover over a skill for current proficiency
-      </h3>
-      <div className="grid grid-cols-5 gap-5">
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-5">
         <Skill directionLeft={true} logoUrl={jsUrl} name="Javascript" />
         <Skill
           directionLeft={true}

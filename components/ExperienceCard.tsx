@@ -17,7 +17,7 @@ const ExperienceCard = ({
   summaryArrary,
 }: Props) => {
   return (
-    <article className="flex flex-col rounded-lg items-center flex-shrink-0 w-[250px] md:w-[600px] xl:w-[1100px] snap-center bg-[#4d4b4b] p-5 opacity-100 cursor-pointer transistion-opacity duration-200 overflow-hidden mt-20 md:mt-8 hover:border-[#F7AB0A]/40 hover:border h-[670px]">
+    <article className="flex flex-col rounded-lg items-center flex-shrink-0 w-[300px] md:w-[600px] xl:w-[1100px] snap-center bg-[#4d4b4b] p-5 opacity-100 cursor-pointer transistion-opacity duration-200 overflow-hidden mt-20 md:mt-8 hover:border-[#F7AB0A]/40 hover:border h-[670px]">
       <img
         className="w-16 h-16 rounded-full xl:w-[150px] xl:h-[150px] object-cover object-start my-1 md:my-6"
         src={imgSrc}

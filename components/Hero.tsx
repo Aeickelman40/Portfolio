@@ -28,6 +28,7 @@ export default function Hero({}: Props) {
         height={500}
         alt="Picture of myself"
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
+        priority={true}
       />
       <div className="z-20">
         <h2 className="text-sm uppercase text-gray-500 tracking-[15px]">

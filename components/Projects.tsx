@@ -8,10 +8,10 @@ function Projects({}: Props) {
   // const projects = [1, 2, 3, 4, 5];
   const [text, count] = useTypewriter({
     words: [
-      "Coming Soon!",
-      "...",
-      "Intersted in collaborating?",
-      "Let's Chat!",
+      "Coming soon...",
+      "Want to collaborate?",
+      "Thinking about trying something new?",
+      "Let's chat!",
     ],
     loop: true,
     delaySpeed: 2000,

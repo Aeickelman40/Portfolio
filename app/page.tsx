@@ -7,6 +7,7 @@ import WorkExperience from "@/components/WorkExperience";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import ContactMe from "@/components/ContactMe";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function Home() {
   return (
@@ -16,11 +17,11 @@ export default function Home() {
         <Hero />
       </section>
 
-      <section id="about" className="snap-center">
+      <section id="about" className="snap-start">
         <About />
       </section>
 
-      <section id="experience" className="snap-center">
+      <section id="experience" className="snap-start">
         <WorkExperience />
       </section>
 
@@ -32,9 +33,10 @@ export default function Home() {
         <Projects />
       </section>
 
-      <section id="contact" className="snap-end">
+      <section id="contact" className="snap-start">
         <ContactMe />
       </section>
+      <Analytics />
     </main>
   );
 }

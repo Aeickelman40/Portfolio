@@ -32,7 +32,7 @@ export default function Home() {
         <Projects />
       </section>
 
-      <section id="contact" className="snap-start">
+      <section id="contact" className="snap-end">
         <ContactMe />
       </section>
     </main>

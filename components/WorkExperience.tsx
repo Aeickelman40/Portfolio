@@ -43,7 +43,7 @@ function WorkExperience({}: Props) {
         <button onClick={handleIntevityClick}>
           <div ref={intevityRef}>
             <ExperienceCard
-              imgSrc="https://media.licdn.com/dms/image/C560BAQFPuFCSF06gRQ/company-logo_200_200/0/1553198011945?e=1695859200&v=beta&t=RDJgRkm10kILAskdAsKrpzYQ2hV5BbV9uz2oPprJa18"
+              imgSrc="/intevity-logo.jpg"
               title="Software Engineer"
               company="Intevity"
               dateRange="Feb 2022 - June 2023"
@@ -54,7 +54,7 @@ function WorkExperience({}: Props) {
         <button onClick={handleKordspaceClick}>
           <div ref={kordspaceRef}>
             <ExperienceCard
-              imgSrc="https://media.licdn.com/dms/image/C560BAQG7k-D5q4AtrQ/company-logo_200_200/0/1603909023525?e=1695859200&v=beta&t=qm7Ck5iBX5igALLEYvjdMsxonIx86EU1x5SMZhl_O0w"
+              imgSrc="/kordspace-logo.jpg"
               title="ReactJS Developer"
               company="Kordspace"
               dateRange="Sep 2020 - Feb 2023"
@@ -65,10 +65,10 @@ function WorkExperience({}: Props) {
         <button onClick={handleTuringClick}>
           <div ref={turingRef}>
             <ExperienceCard
-              imgSrc="https://media.licdn.com/dms/image/C4E0BAQET8fJiAvWTDA/company-logo_200_200/0/1519911325543?e=1695859200&v=beta&t=mU6LcqNP-aMDSQIOpsJ81dNoq5_xFH93L5YDn-XSX4U"
+              imgSrc="/turing-logo.png"
               title="Student"
               company="Turing School of Software and Technology"
-              dateRange=" - Oct 2020"
+              dateRange="Jan 2020 - Oct 2020"
               summaryArrary={turingSummary}
             />
           </div>

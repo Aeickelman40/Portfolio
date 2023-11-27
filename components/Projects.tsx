@@ -6,7 +6,7 @@ type Props = {};
 
 function Projects({}: Props) {
   // const projects = [1, 2, 3, 4, 5];
-  const [text, count] = useTypewriter({
+  const [text] = useTypewriter({
     words: [
       "Coming soon...",
       "Want to collaborate?",

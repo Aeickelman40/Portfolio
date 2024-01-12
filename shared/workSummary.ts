@@ -10,7 +10,7 @@ export const kordspaceSummary = [
   "Develop and implement front-end architecture to support user interface concepts.",
   "Document application changes and develop updates.",
   "Troubleshoot interface software and debug application codebase.",
-  "Implement updates using Git workflow and deployment usingFirebase.",
+  "Implement updates using Git workflow and deployment using Firebase.",
   "Manage and prioritize tasks using Jira project boards.",
   "Present development updates to clients on a weekly basis. Communicating progression in technical and non-technical terms.",
   "Research and implement existing packages using npm that could add efficiency and better overall user experience to applications in development.",

@@ -39,7 +39,7 @@ function About({}: Props) {
         <p className="text-sm md:text-base">
           I am a passionate web developer who loves crafting innovative and
           user-friendly websites. With a strong foundation in using React, React
-          Native, Typescript, Node. and GraphQL, I thrive on transforming ideas
+          Native, Typescript, Node and GraphQL, I thrive on transforming ideas
           into visually appealing and functional online experiences. Whether
           it&apos;s building responsive designs or implementing complex
           functionalities, I enjoy the challenges that come with creating

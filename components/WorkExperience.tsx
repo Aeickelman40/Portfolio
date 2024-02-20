@@ -10,7 +10,6 @@ import {
 type Props = {};
 
 function WorkExperience({}: Props) {
-  const ref = useRef<null | HTMLDivElement>(null);
   const intevityRef = useRef<null | HTMLDivElement>(null);
   const kordspaceRef = useRef<null | HTMLDivElement>(null);
   const turingRef = useRef<null | HTMLDivElement>(null);

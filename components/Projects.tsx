@@ -5,7 +5,7 @@ import { Cursor, useTypewriter } from "react-simple-typewriter";
 type Props = {};
 
 function Projects({}: Props) {
-  // const projects = [1, 2, 3, 4, 5];
+  const projects = [1, 2, 3, 4, 5];
   const [text] = useTypewriter({
     words: [
       "Coming soon...",
@@ -29,11 +29,11 @@ function Projects({}: Props) {
       <h3 className="absolute top-[80px] md:top-8 uppercase tracking-[20px] text-gray-500 text-xl lg:text-2xl">
         Projects
       </h3>
-      <h1 className="text-2xl lg:text-6xl font-semibold px-10 pt-4">
+      {/* <h1 className="text-2xl lg:text-6xl font-semibold px-10 pt-4">
         <span className="mr-3">{text}</span>
         <Cursor cursorColor="#F7AB0A" />
-      </h1>
-      {/* <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
+      </h1> */}
+      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
         {projects.map((project, i) => {
           return (
             <div
@@ -71,7 +71,7 @@ function Projects({}: Props) {
             </div>
           );
         })}
-      </div> */}
+      </div>
       <div className="w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12" />
     </motion.div>
   );

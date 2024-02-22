@@ -1,11 +1,13 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
-import ExperienceCard from "./ExperienceCard";
+
 import {
   intevitySummary,
   kordspaceSummary,
   turingSummary,
 } from "@/shared/workSummary";
+
+import ExperienceCard from "./ExperienceCard";
 
 type Props = {};
 

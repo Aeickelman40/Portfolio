@@ -35,17 +35,26 @@ function Projects() {
       <div className="w-full flex space-x-5 overflow-x-scroll overflow-y-auto p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
         <button onClick={handleDiscordClick}>
           <div ref={discordRef}>
-            <ProjectCard title="Discord Clone" />
+            <ProjectCard
+              title="Discord Clone"
+              githubUrl="https://github.com/Aeickelman40/ideal-lamp"
+            />
           </div>
         </button>
         <button onClick={handleAIClick}>
           <div ref={aiRef}>
-            <ProjectCard title="AI SaaS" />
+            <ProjectCard
+              title="AI SaaS"
+              githubUrl="https://github.com/Aeickelman40/ideal-lamp"
+            />
           </div>
         </button>
         <button onClick={handleSpotifyClick}>
           <div ref={spotifyRef}>
-            <ProjectCard title="Spotify Clone" />
+            <ProjectCard
+              title="Spotify Clone"
+              githubUrl="https://github.com/Aeickelman40/ideal-lamp"
+            />
           </div>
         </button>
       </div>

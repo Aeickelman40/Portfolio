@@ -9,9 +9,7 @@ import {
 
 import ExperienceCard from "./ExperienceCard";
 
-type Props = {};
-
-function WorkExperience({}: Props) {
+function WorkExperience() {
   const intevityRef = useRef<null | HTMLDivElement>(null);
   const kordspaceRef = useRef<null | HTMLDivElement>(null);
   const turingRef = useRef<null | HTMLDivElement>(null);

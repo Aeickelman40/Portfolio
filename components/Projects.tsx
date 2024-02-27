@@ -45,7 +45,7 @@ function Projects() {
           <div ref={aiRef}>
             <ProjectCard
               title="AI SaaS"
-              githubUrl="https://github.com/Aeickelman40/ideal-lamp"
+              githubUrl="https://github.com/Aeickelman40/ai-saas"
             />
           </div>
         </button>
@@ -53,7 +53,7 @@ function Projects() {
           <div ref={spotifyRef}>
             <ProjectCard
               title="Spotify Clone"
-              githubUrl="https://github.com/Aeickelman40/ideal-lamp"
+              githubUrl="https://github.com/Aeickelman40/spotify-clone"
             />
           </div>
         </button>

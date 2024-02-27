@@ -1,6 +1,17 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
 
+import {
+  aiStack,
+  discordStack,
+  spotifyStack,
+} from "@/shared/projects/projectTechStacks";
+import {
+  aiSaaSFeatures,
+  discordFeatures,
+  spotifyFeatures,
+} from "@/shared/projects/projectFeatures";
+
 import ProjectCard from "./ProjectCard";
 
 function Projects() {
@@ -38,6 +49,8 @@ function Projects() {
             <ProjectCard
               title="Discord Clone"
               githubUrl="https://github.com/Aeickelman40/ideal-lamp"
+              techStacks={discordStack}
+              features={discordFeatures}
             />
           </div>
         </button>
@@ -46,6 +59,8 @@ function Projects() {
             <ProjectCard
               title="AI SaaS"
               githubUrl="https://github.com/Aeickelman40/ai-saas"
+              techStacks={aiStack}
+              features={aiSaaSFeatures}
             />
           </div>
         </button>
@@ -54,6 +69,8 @@ function Projects() {
             <ProjectCard
               title="Spotify Clone"
               githubUrl="https://github.com/Aeickelman40/spotify-clone"
+              techStacks={spotifyStack}
+              features={spotifyFeatures}
             />
           </div>
         </button>

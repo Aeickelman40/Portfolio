@@ -1,5 +1,6 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
+import { Carousel, CarouselContent } from "./ui/carousel";
 
 type Props = {
   title: string;
@@ -46,6 +47,11 @@ const ProjectCard = ({
                 return <li key={feature}>{feature}</li>;
               })}
             </ul>
+          </div>
+          <div className="flex col">
+            <Carousel>
+              <CarouselContent></CarouselContent>
+            </Carousel>
           </div>
         </div>
       </div>

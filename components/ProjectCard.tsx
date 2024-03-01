@@ -1,6 +1,6 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
-import { Carousel, CarouselContent } from "./ui/carousel";
+import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 
 type Props = {
   title: string;
@@ -9,6 +9,7 @@ type Props = {
   techStacks: Array<string>;
   features: Array<string>;
   disabled: boolean;
+  images: any;
 };
 
 const ProjectCard = ({
@@ -18,6 +19,7 @@ const ProjectCard = ({
   features,
   url,
   disabled,
+  images,
 }: Props) => {
   return (
     <article className="flex flex-col rounded-lg flex-shrink-0 w-[300px] md:w-[600px] xl:w-[1100px] snap-center bg-[#4d4b4b] p-5 opacity-100 cursor-pointer transistion-opacity duration-200 overflow-hidden mt-20 md:mt-8 hover:border-[#F7AB0A]/40 hover:border h-[670px]">
@@ -48,9 +50,11 @@ const ProjectCard = ({
               })}
             </ul>
           </div>
-          <div className="flex col">
+          <div className="flex col bg-black">
             <Carousel>
-              <CarouselContent></CarouselContent>
+              <CarouselContent>
+                <CarouselItem>{images}</CarouselItem>
+              </CarouselContent>
             </Carousel>
           </div>
         </div>

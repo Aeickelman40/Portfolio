@@ -6,6 +6,7 @@ import {
   discordStack,
   spotifyStack,
 } from "@/shared/projects/projectTechStacks";
+
 import {
   aiSaaSFeatures,
   discordFeatures,
@@ -13,6 +14,19 @@ import {
 } from "@/shared/projects/projectFeatures";
 
 import ProjectCard from "./ProjectCard";
+import Image from "next/image";
+
+const aiImages = () => {
+  return (
+    <div>
+      <Image src="/shared/ai-photos/ai-1.png" alt="ai-image" />
+      <Image src="/shared/ai-photos/ai-2.png" alt="ai-image" />
+      <Image src="/shared/ai-photos/ai-3.png" alt="ai-image" />
+      <Image src="/shared/ai-photos/ai-4.png" alt="ai-image" />
+      <Image src="/shared/ai-photos/ai-5.png" alt="ai-image" />
+    </div>
+  );
+};
 
 function Projects() {
   const discordRef = useRef<null | HTMLDivElement>(null);
@@ -53,6 +67,7 @@ function Projects() {
               techStacks={spotifyStack}
               features={spotifyFeatures}
               disabled={false}
+              images={""}
             />
           </div>
         </button>
@@ -65,6 +80,7 @@ function Projects() {
               techStacks={aiStack}
               features={aiSaaSFeatures}
               disabled={true}
+              images={aiImages}
             />
           </div>
         </button>
@@ -78,6 +94,7 @@ function Projects() {
               techStacks={discordStack}
               features={discordFeatures}
               disabled={true}
+              images={""}
             />
           </div>
         </button>

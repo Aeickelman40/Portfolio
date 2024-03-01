@@ -44,18 +44,6 @@ function Projects() {
         Projects
       </h3>
       <div className="w-full flex space-x-5 overflow-x-scroll overflow-y-auto p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
-        <button onClick={handleAIClick}>
-          <div ref={aiRef}>
-            <ProjectCard
-              url="https://ai-saas-blond.vercel.app/"
-              title="AI SaaS"
-              githubUrl="https://github.com/Aeickelman40/ai-saas"
-              techStacks={aiStack}
-              features={aiSaaSFeatures}
-              disabled={false}
-            />
-          </div>
-        </button>
         <button onClick={handleSpotifyClick}>
           <div ref={spotifyRef}>
             <ProjectCard
@@ -68,6 +56,19 @@ function Projects() {
             />
           </div>
         </button>
+        <button onClick={handleAIClick}>
+          <div ref={aiRef}>
+            <ProjectCard
+              url="https://ai-saas-blond.vercel.app/"
+              title="AI SaaS"
+              githubUrl="https://github.com/Aeickelman40/ai-saas"
+              techStacks={aiStack}
+              features={aiSaaSFeatures}
+              disabled={true}
+            />
+          </div>
+        </button>
+
         <button onClick={handleDiscordClick}>
           <div ref={discordRef}>
             <ProjectCard

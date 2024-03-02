@@ -14,7 +14,9 @@ import {
   typescriptUrl,
 } from "@/shared/imageUrls";
 
-function Skills() {
+type Props = {};
+
+function Skills({}: Props) {
   return (
     <motion.div
       initial={{

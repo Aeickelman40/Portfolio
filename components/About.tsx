@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-function About() {
+type Props = {};
+
+function About({}: Props) {
   return (
     <motion.div
       initial={{

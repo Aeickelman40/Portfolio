@@ -57,7 +57,7 @@ const ProjectCard = ({
               })}
             </ul>
           </div>
-          <Carousel className="flex-1">
+          <Carousel className="flex-1 self-center">
             <CarouselContent>
               {images.map((image: any) => {
                 return (

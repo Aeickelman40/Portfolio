@@ -16,31 +16,31 @@ import {
 import ProjectCard from "./ProjectCard";
 
 const aiImages = [
-  { id: 1, src: "/ai-photos/ai-1.png", width: 100, height: 100 },
-  { id: 2, src: "/ai-photos/ai-2.png", width: 100, height: 100 },
-  { id: 3, src: "/ai-photos/ai-3.png", width: 100, height: 100 },
-  { id: 4, src: "/ai-photos/ai-4.png", width: 100, height: 100 },
-  { id: 5, src: "/ai-photos/ai-5.png", width: 100, height: 100 },
+  { id: 1, src: "/ai-photos/ai-1.png", width: 500, height: 500 },
+  { id: 2, src: "/ai-photos/ai-2.png", width: 500, height: 500 },
+  { id: 3, src: "/ai-photos/ai-3.png", width: 500, height: 500 },
+  { id: 4, src: "/ai-photos/ai-4.png", width: 500, height: 500 },
+  { id: 5, src: "/ai-photos/ai-5.png", width: 500, height: 500 },
 ];
 
 const discordImages = [
   {
     id: 1,
     src: "/discord-photos/discord-1.png",
-    width: 100,
-    height: 100,
+    width: 500,
+    height: 500,
   },
   {
     id: 2,
     src: "/discord-photos/discord-2.png",
-    width: 100,
-    height: 100,
+    width: 500,
+    height: 500,
   },
   {
     id: 3,
     src: "/discord-photos/discord-3.png",
-    width: 100,
-    height: 100,
+    width: 500,
+    height: 500,
   },
 ];
 
@@ -48,26 +48,26 @@ const spotifyImages = [
   {
     id: 1,
     src: "/spotify-photos/spotify-1.png",
-    width: 100,
-    height: 100,
+    width: 500,
+    height: 500,
   },
   {
     id: 2,
     src: "/spotify-photos/spotify-2.png",
-    width: 100,
-    height: 100,
+    width: 500,
+    height: 500,
   },
   {
     id: 3,
     src: "/spotify-photos/spotify-3.png",
-    width: 100,
-    height: 100,
+    width: 500,
+    height: 500,
   },
   {
     id: 4,
     src: "/spotify-photos/spotify-4.png",
-    width: 100,
-    height: 100,
+    width: 500,
+    height: 500,
   },
 ];
 

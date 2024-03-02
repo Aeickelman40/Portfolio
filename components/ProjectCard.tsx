@@ -36,8 +36,8 @@ const ProjectCard = ({
           <SocialIcon url={url} fgColor="gray" bgColor="transparent" />
         )}
         <SocialIcon url={githubUrl} fgColor="gray" bgColor="transparent" />
-        <div className="flex flex-1 space-x-8">
-          <div className="flex-col">
+        <div className="flex flex-row space-x-8">
+          <div className="flex-1">
             <p className="font-bold text-xl mb-4 md:mt-1 text-left">
               Tech Stack
             </p>
@@ -47,7 +47,7 @@ const ProjectCard = ({
               })}
             </ul>
           </div>
-          <div className="flex-col">
+          <div className="flex-1">
             <p className="font-bold text-xl mb-4 md:mt-1 text-left">
               Key Features
             </p>
@@ -57,27 +57,22 @@ const ProjectCard = ({
               })}
             </ul>
           </div>
-          <div className="flex col bg-black">
-            <Carousel>
-              <CarouselContent>
-                {/* {images.map((image: any) => {
-                  console.log("image", image);
-                  return (
-                    <CarouselItem key={image.id}>
-                      <Image
-                        src={image.src}
-                        width={image.width}
-                        height={image.height}
-                        alt={`Image ${image.id}`}
-                      />
-                    </CarouselItem>
-                  );
-                })} */}
-                <CarouselPrevious />
-                <CarouselNext />
-              </CarouselContent>
-            </Carousel>
-          </div>
+          <Carousel className="flex-1">
+            <CarouselContent>
+              {images.map((image: any) => {
+                return (
+                  <CarouselItem key={image.id}>
+                    <Image
+                      src={image.src}
+                      width={image.width}
+                      height={image.height}
+                      alt={`Image ${image.id}`}
+                    />
+                  </CarouselItem>
+                );
+              })}
+            </CarouselContent>
+          </Carousel>
         </div>
       </div>
     </article>

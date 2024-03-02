@@ -1,6 +1,13 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
-import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "./ui/carousel";
+import Image from "next/image";
 
 type Props = {
   title: string;
@@ -53,7 +60,21 @@ const ProjectCard = ({
           <div className="flex col bg-black">
             <Carousel>
               <CarouselContent>
-                <CarouselItem>{images}</CarouselItem>
+                {/* {images.map((image: any) => {
+                  console.log("image", image);
+                  return (
+                    <CarouselItem key={image.id}>
+                      <Image
+                        src={image.src}
+                        width={image.width}
+                        height={image.height}
+                        alt={`Image ${image.id}`}
+                      />
+                    </CarouselItem>
+                  );
+                })} */}
+                <CarouselPrevious />
+                <CarouselNext />
               </CarouselContent>
             </Carousel>
           </div>

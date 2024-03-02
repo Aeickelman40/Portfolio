@@ -14,19 +14,62 @@ import {
 } from "@/shared/projects/projectFeatures";
 
 import ProjectCard from "./ProjectCard";
-import Image from "next/image";
 
-const aiImages = () => {
-  return (
-    <div>
-      <Image src="/shared/ai-photos/ai-1.png" alt="ai-image" />
-      <Image src="/shared/ai-photos/ai-2.png" alt="ai-image" />
-      <Image src="/shared/ai-photos/ai-3.png" alt="ai-image" />
-      <Image src="/shared/ai-photos/ai-4.png" alt="ai-image" />
-      <Image src="/shared/ai-photos/ai-5.png" alt="ai-image" />
-    </div>
-  );
-};
+const aiImages = [
+  { id: 1, src: "/shared/ai-photos/ai-1.png", width: 500, height: 300 },
+  { id: 2, src: "/shared/ai-photos/ai-2.png", width: 500, height: 300 },
+  { id: 3, src: "/shared/ai-photos/ai-3.png", width: 500, height: 300 },
+  { id: 4, src: "/shared/ai-photos/ai-4.png", width: 500, height: 300 },
+  { id: 5, src: "/shared/ai-photos/ai-5.png", width: 500, height: 300 },
+];
+
+const discordImages = [
+  {
+    id: 1,
+    src: "/shared/discord-photos/discord-1.png",
+    width: 500,
+    height: 300,
+  },
+  {
+    id: 2,
+    src: "/shared/discord-photos/discord-2.png",
+    width: 500,
+    height: 300,
+  },
+  {
+    id: 3,
+    src: "/shared/discord-photos/discord-3.png",
+    width: 500,
+    height: 300,
+  },
+];
+
+const spotifyImages = [
+  {
+    id: 1,
+    src: "/shared/spotify-photos/spotify-1.png",
+    width: 500,
+    height: 300,
+  },
+  {
+    id: 2,
+    src: "/shared/spotify-photos/spotify-2.png",
+    width: 500,
+    height: 300,
+  },
+  {
+    id: 3,
+    src: "/shared/spotify-photos/spotify-3.png",
+    width: 500,
+    height: 300,
+  },
+  {
+    id: 4,
+    src: "/shared/spotify-photos/spotify-4.png",
+    width: 500,
+    height: 300,
+  },
+];
 
 function Projects() {
   const discordRef = useRef<null | HTMLDivElement>(null);
@@ -67,7 +110,7 @@ function Projects() {
               techStacks={spotifyStack}
               features={spotifyFeatures}
               disabled={false}
-              images={""}
+              images={spotifyImages}
             />
           </div>
         </button>
@@ -94,7 +137,7 @@ function Projects() {
               techStacks={discordStack}
               features={discordFeatures}
               disabled={true}
-              images={""}
+              images={discordImages}
             />
           </div>
         </button>

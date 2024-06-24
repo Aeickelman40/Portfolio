@@ -37,7 +37,7 @@ const ProjectCard = ({
         )}
         <SocialIcon url={githubUrl} fgColor="gray" bgColor="transparent" />
         <div className="flex flex-row space-x-8">
-          <div className="flex-1">
+          <div className="">
             <p className="font-bold text-xl mb-4 md:mt-1 text-left">
               Tech Stack
             </p>
@@ -57,7 +57,8 @@ const ProjectCard = ({
               })}
             </ul>
           </div>
-          <Carousel className="flex-1 self-center">
+          <Carousel className="flex-1 self-center hidden lg:block">
+            <CarouselPrevious />
             <CarouselContent>
               {images.map((image: any) => {
                 return (
@@ -72,6 +73,7 @@ const ProjectCard = ({
                 );
               })}
             </CarouselContent>
+            <CarouselNext />
           </Carousel>
         </div>
       </div>

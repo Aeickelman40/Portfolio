@@ -57,7 +57,7 @@ const ProjectCard = ({
               })}
             </ul>
           </div>
-          <Carousel className="flex-1 self-center hidden lg:block">
+          <Carousel className="flex-1 self-center hidden lg:flow-root align-middle">
             <CarouselPrevious />
             <CarouselContent>
               {images.map((image: any) => {

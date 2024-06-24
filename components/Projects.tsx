@@ -25,12 +25,6 @@ const aiImages = [
 
 const discordImages = [
   {
-    id: 1,
-    src: "/discord-photos/discord-1.png",
-    width: 500,
-    height: 500,
-  },
-  {
     id: 2,
     src: "/discord-photos/discord-2.png",
     width: 500,

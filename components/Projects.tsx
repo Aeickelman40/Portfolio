@@ -1,21 +1,92 @@
-import React from "react";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
-import { Cursor, useTypewriter } from "react-simple-typewriter";
 
-type Props = {};
+import {
+  aiStack,
+  discordStack,
+  spotifyStack,
+} from "@/shared/projects/projectTechStacks";
 
-function Projects({}: Props) {
-  // const projects = [1, 2, 3, 4, 5];
-  const [text] = useTypewriter({
-    words: [
-      "Coming soon...",
-      "Want to collaborate?",
-      "Thinking about trying something new?",
-      "Let's chat!",
-    ],
-    loop: true,
-    delaySpeed: 2000,
-  });
+import {
+  aiSaaSFeatures,
+  discordFeatures,
+  spotifyFeatures,
+} from "@/shared/projects/projectFeatures";
+
+import ProjectCard from "./ProjectCard";
+
+const aiImages = [
+  { id: 1, src: "/ai-photos/ai-1.png", width: 500, height: 500 },
+  { id: 2, src: "/ai-photos/ai-2.png", width: 500, height: 500 },
+  { id: 3, src: "/ai-photos/ai-3.png", width: 500, height: 500 },
+  { id: 4, src: "/ai-photos/ai-4.png", width: 500, height: 500 },
+  { id: 5, src: "/ai-photos/ai-5.png", width: 500, height: 500 },
+];
+
+const discordImages = [
+  {
+    id: 1,
+    src: "/discord-photos/discord-1.png",
+    width: 500,
+    height: 500,
+  },
+  {
+    id: 2,
+    src: "/discord-photos/discord-2.png",
+    width: 500,
+    height: 500,
+  },
+  {
+    id: 3,
+    src: "/discord-photos/discord-3.png",
+    width: 500,
+    height: 500,
+  },
+];
+
+const spotifyImages = [
+  {
+    id: 1,
+    src: "/spotify-photos/spotify-1.png",
+    width: 500,
+    height: 500,
+  },
+  {
+    id: 2,
+    src: "/spotify-photos/spotify-2.png",
+    width: 500,
+    height: 500,
+  },
+  {
+    id: 3,
+    src: "/spotify-photos/spotify-3.png",
+    width: 500,
+    height: 500,
+  },
+  {
+    id: 4,
+    src: "/spotify-photos/spotify-4.png",
+    width: 500,
+    height: 500,
+  },
+];
+
+function Projects() {
+  const discordRef = useRef<null | HTMLDivElement>(null);
+  const aiRef = useRef<null | HTMLDivElement>(null);
+  const spotifyRef = useRef<null | HTMLDivElement>(null);
+
+  const handleDiscordClick = () => {
+    discordRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleAIClick = () => {
+    aiRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleSpotifyClick = () => {
+    spotifyRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <motion.div
@@ -29,50 +100,48 @@ function Projects({}: Props) {
       <h3 className="absolute top-[80px] md:top-8 uppercase tracking-[20px] text-gray-500 text-xl lg:text-2xl">
         Projects
       </h3>
-      <h1 className="text-2xl lg:text-6xl font-semibold px-10 pt-4">
-        <span className="mr-3">{text}</span>
-        <Cursor cursorColor="#F7AB0A" />
-      </h1>
-      {/* <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
-        {projects.map((project, i) => {
-          return (
-            <div
-              key={i}
-              className="w-screen flex-shrink-0 snap-center flex flex-col spac-y-5 items-center justify-center p-20 md:p-44 h-screen"
-            >
-              <motion.img
-                initial={{
-                  y: -300,
-                }}
-                transition={{
-                  duration: 1.2,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                viewport={{
-                  once: true,
-                }}
-                src="https://picsum.photos/id/237/200/300"
-                alt=""
-              />
-              <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-                <h4 className="text-4xl font-semibold text-center">
-                  <span className="underline decoration-[#F7AB0A]/50">
-                    Case Study {i + 1} of {projects.length}:
-                  </span>{" "}
-                  UPS clone
-                </h4>
-                <p className="text-lg text-center md:text-left">
-                  Example project description
-                </p>
-              </div>
-            </div>
-          );
-        })}
-      </div> */}
-      <div className="w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12" />
+      <div className="w-full flex space-x-5 overflow-x-scroll overflow-y-auto p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
+        <button onClick={handleSpotifyClick}>
+          <div ref={spotifyRef}>
+            <ProjectCard
+              url="https://alex-eickelman-spotify.vercel.app/"
+              title="Spotify Clone"
+              githubUrl="https://github.com/Aeickelman40/spotify-clone"
+              techStacks={spotifyStack}
+              features={spotifyFeatures}
+              disabled={false}
+              images={spotifyImages}
+            />
+          </div>
+        </button>
+        <button onClick={handleAIClick}>
+          <div ref={aiRef}>
+            <ProjectCard
+              url="https://ai-saas-blond.vercel.app/"
+              title="AI SaaS"
+              githubUrl="https://github.com/Aeickelman40/ai-saas"
+              techStacks={aiStack}
+              features={aiSaaSFeatures}
+              disabled={true}
+              images={aiImages}
+            />
+          </div>
+        </button>
+
+        <button onClick={handleDiscordClick}>
+          <div ref={discordRef}>
+            <ProjectCard
+              url=""
+              title="Discord Clone"
+              githubUrl="https://github.com/Aeickelman40/ideal-lamp"
+              techStacks={discordStack}
+              features={discordFeatures}
+              disabled={true}
+              images={discordImages}
+            />
+          </div>
+        </button>
+      </div>
     </motion.div>
   );
 }

@@ -1,16 +1,15 @@
 import React, { useRef } from "react";
 import { motion } from "framer-motion";
-import ExperienceCard from "./ExperienceCard";
+
 import {
   intevitySummary,
   kordspaceSummary,
   turingSummary,
 } from "@/shared/workSummary";
 
-type Props = {};
+import ExperienceCard from "./ExperienceCard";
 
-function WorkExperience({}: Props) {
-  const ref = useRef<null | HTMLDivElement>(null);
+function WorkExperience() {
   const intevityRef = useRef<null | HTMLDivElement>(null);
   const kordspaceRef = useRef<null | HTMLDivElement>(null);
   const turingRef = useRef<null | HTMLDivElement>(null);

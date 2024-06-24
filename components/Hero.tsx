@@ -4,8 +4,7 @@ import BackgroundCircles from "./BackgroundCircles";
 import Image from "next/image";
 import Link from "next/link";
 
-type Props = {};
-export default function Hero({}: Props) {
+export default function Hero() {
   const [text, count] = useTypewriter({
     words: [
       "Hi, I'm Alex",

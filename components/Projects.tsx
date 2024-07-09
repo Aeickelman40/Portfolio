@@ -95,8 +95,8 @@ function Projects() {
         Projects
       </h3>
       <div className="w-full flex space-x-5 overflow-x-scroll overflow-y-auto p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
-        <button onClick={handleSpotifyClick}>
-          <div ref={spotifyRef}>
+        <div ref={spotifyRef}>
+          <button onClick={handleSpotifyClick}>
             <ProjectCard
               url="https://alex-eickelman-spotify.vercel.app/"
               title="Spotify Clone"
@@ -106,10 +106,10 @@ function Projects() {
               disabled={false}
               images={spotifyImages}
             />
-          </div>
-        </button>
-        <button onClick={handleAIClick}>
-          <div ref={aiRef}>
+          </button>
+        </div>
+        <div ref={aiRef}>
+          <button onClick={handleAIClick}>
             <ProjectCard
               url="https://ai-saas-blond.vercel.app/"
               title="AI SaaS"
@@ -119,11 +119,10 @@ function Projects() {
               disabled={true}
               images={aiImages}
             />
-          </div>
-        </button>
-
-        <button onClick={handleDiscordClick}>
-          <div ref={discordRef}>
+          </button>
+        </div>
+        <div ref={discordRef}>
+          <button onClick={handleDiscordClick}>
             <ProjectCard
               url=""
               title="Discord Clone"
@@ -133,8 +132,8 @@ function Projects() {
               disabled={true}
               images={discordImages}
             />
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
     </motion.div>
   );

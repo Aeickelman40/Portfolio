@@ -1,12 +1,6 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "./ui/carousel";
+import { Carousel, CarouselContent, CarouselItem } from "./ui/carousel";
 import Image from "next/image";
 
 type Props = {
@@ -58,7 +52,6 @@ const ProjectCard = ({
             </ul>
           </div>
           <Carousel className="flex-1 self-center hidden lg:inline-block lg:align-middle">
-            <CarouselPrevious />
             <CarouselContent>
               {images.map((image: any) => {
                 return (
@@ -73,7 +66,6 @@ const ProjectCard = ({
                 );
               })}
             </CarouselContent>
-            <CarouselNext />
           </Carousel>
         </div>
       </div>
